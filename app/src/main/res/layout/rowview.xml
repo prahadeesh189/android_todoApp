@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardrowview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="7dp"
+    android:layout_marginTop="4dp"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:id="@+id/rowViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="12dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/custom_checkbox"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tasktext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:text="bfhmqwertyuiopplkjhgfdsazxcvbnmlpoiuytewqasdfghjkllmnbvcxzaqwiop;.,mnbvczaqwrtyuiop;lkjhgfdsazxcvbnm,"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <View
+                android:id="@+id/div"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:background="#000" />
+
+
+            <ImageButton
+                android:id="@+id/itemedit"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/ic_edit_black_24dp"
+                android:src="@drawable/ic_edit_black_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
